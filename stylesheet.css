@@ -464,13 +464,6 @@ opacity: 0;
 
 
 
-
-
-
-
-
-
-
 /* portfolio */
 
 .portfolio{
@@ -540,9 +533,12 @@ transform: scale(1.1);
 
 /* Contact */
 .contact h2{
-    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 4.5rem;
+    margin-top: -3rem;
+    padding-bottom: 0;
 }
-.contact form{
+/* .contact form{
     max-width: 70rem;
     margin: 1rem auto;
     text-align: center;
@@ -572,7 +568,25 @@ transform: scale(1.1);
 .contact form .btn{
 margin-top: 2rem;
 cursor: pointer;
+} */
+
+.contact p{
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 0 15rem;
+    transform: translateY(100px);
+    animation: showText 0.5s 5s linear forwards;
+    opacity: 0 ;
+    animation-delay: 1.2s;
 }
+
+/* @keyframes slideText {
+    to {
+      opacity: 1;
+      transform: translateY(50px);
+    }
+  } */
+
 
 /* Footer */
 .footer{
@@ -687,7 +701,7 @@ background: var(--main-color);
     html{
         font-size: 50%;
     }
-    .contact form .input-box input{
+    .contact form .input-box {
         width: 100%;
     }
 }
